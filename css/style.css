@@ -1,0 +1,142 @@
+.top {
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.nav {
+    /*background-color: black;*/
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+a.active {
+    background-color: black;
+
+}
+
+.nav a {
+    box-shadow: inset 0px 1px 0px 0px #caefab;
+    background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    background-color: #77d42a;
+    border-radius: 6px;
+    border: 1px solid #268a16;
+    display: inline-block;
+    cursor: pointer;
+    color: #306108;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 8px 26px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #aade7c;
+}
+
+.nav a:hover {
+    background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    background-color: #5cb811;
+}
+
+.logo {
+    background-color: white;
+    height: 134px;
+    top: 200px;
+    width: 134px;
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+}
+
+.title {
+    top: 25px;
+    left: 150px;
+    position: absolute;
+    text-align: center;
+    color: #111d42;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+figure {
+    width: 1024px;
+    height: 270px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.background {
+    margin-top: 60px;
+    position: absolute;
+    overflow: hidden;
+    width: 1024px;
+    height: 270px;
+    background-size: cover;
+    background-image: url("../img/backdrop.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.main {
+    margin: 0 auto;
+    border: 0;
+    width: 1024px;
+    height: 400px;
+
+}
+
+.h2-title {
+    background-color: #333333;
+    /* optional */
+    width: 1024px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 35px;
+    margin-top: 1px;
+}
+
+.home-article {
+    width: 100%;
+    max-width:1024px;
+    position: absolute;
+    margin-top: 90px;
+    text-align: center;
+}
+.home-article h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: #000000;
+    line-height: 35px;
+    font-weight: bold;
+
+}
+.home-article p{
+    font-family: 'Roboto', sans-serif;
+    font-weight:normal;
+
+
+}
+footer {
+    position: relative;
+    height: 40px;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #333333;
+}
+
+p.bottom {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 12px;
+    color: #ffffff;
+    bottom: 10px;
+}
