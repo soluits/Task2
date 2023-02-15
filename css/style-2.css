@@ -9,55 +9,60 @@
 .nav {
     /*background-color: black;*/
     position: absolute;
-    right: 50px;
+    right: 0px;
     top: 40px;
 }
 
-a.active {
-    background-color: black;
 
-}
-
-.nav a {
-    box-shadow: inset 0px 1px 0px 0px #caefab;
-    background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+a {
+    box-shadow: 3px 7px 2px 0px #51404094;
+    background: linear-gradient(to bottom, #4472c4 5%, #3962aa 100%);
     background-color: #77d42a;
-    border-radius: 6px;
-    border: 1px solid #268a16;
+    /* border-radius: 6px; */
+    /* border: 1px solid #268a16; */
     display: inline-block;
     cursor: pointer;
-    color: #306108;
+    color: #fff;
     font-family: Arial;
     font-size: 19px;
     font-weight: bold;
     padding: 8px 26px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #aade7c;
+	
 }
 
-.nav a:hover {
-    background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+a:hover {
+    background: linear-gradient(to bottom, #4472c4 5%, #4472c4 100%);
     background-color: #5cb811;
 }
 
+#active {
+    background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    background-color: black !important;
+}
+.item{
+	margin-left:10px;
+}
 .logo {
     background-color: white;
     height: 134px;
-    top: 200px;
+    top: 350px;
     width: 134px;
     position: absolute;
-    right: 50px;
+    left: 40px;
     z-index: 1;
 }
 
 .title {
-    top: 25px;
-    left: 150px;
+    top: 15px;
+    left: 15px;
     position: absolute;
-    text-align: center;
-    color: #111d42;
-    font-size: 36px;
-    font-family: 'Bebas Neue', cursive;
+    /* text-align: center; */
+    color: #000;
+    font-size: 44px;
+    font-family: 'Comic Sans', cursive;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 
 }
 
@@ -86,32 +91,32 @@ figure {
     border: 0;
     width: 1024px;
     height: 400px;
-
 }
 
 .h2-title {
     background-color: #333333;
     /* optional */
     width: 1024px;
-    height: 40px;
+    height: 43px;
     position: absolute;
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+
+    font-family: cursive;
     font-size: 24px;
     color: #ffffff;
-    line-height: 35px;
-    margin-top: 1px;
+    line-height: 47px;
+    margin-top: 4px;
 }
 
 .home-article {
-    width: 100%;
-    max-width:1024px;
+    width:1024px;
     position: absolute;
     margin-top: 90px;
-    text-align: center;
+	margin-left:200px;
+    /* text-align: left; */
 }
 .home-article h3 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: cursive;
     font-size: 20px;
     color: #000000;
     line-height: 35px;
@@ -119,8 +124,10 @@ figure {
 
 }
 .home-article p{
-    font-family: 'Roboto', sans-serif;
+
+    font-family: cursive;
     font-weight:normal;
+	width:800px;
 
 
 }
@@ -130,6 +137,7 @@ footer {
     width: 1024px;
     margin: 0 auto;
     background-color: #333333;
+
 }
 
 p.bottom {
