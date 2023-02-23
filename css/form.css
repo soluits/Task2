@@ -1,0 +1,58 @@
+.form-container{
+	width:100%;
+}
+.row{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+}
+.body .row div {
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+
+}
+.col-one {
+  background: blue;
+  border: black 5px solid;
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 3;
+}
+.col-three {
+	
+}
+.col-four {
+}
+.col-five {
+}
+.col-six {
+}
+
+.name{
+		  background: red;
+  border: black 5px solid;
+
+grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 3;}
+  
+.lastname{  
+grid-column-start: 3; 
+  grid-column-end: 5; 
+    grid-row-start: 1; 
+  grid-row-end: 3;}
+.street{}
+.city{}
+.zip-code{}
+.bday{}
+.grade{
+	  background: blue;
+  border: black 5px solid;
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+  grid-row-start: 4; 
+  grid-row-end: 6;
+}
