@@ -283,3 +283,15 @@ flex-grow: 0 !important;
     display: block;
 }
 
+@media (max-width: 600px) {
+    iframe.iframe-map {
+        width: 100%;
+        max-width: 300px
+    }
+  }
+@media (max-width: 350px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 2fr ip !important;
+    }
+  }

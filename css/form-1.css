@@ -33,6 +33,20 @@ body > main > aside > div > form > div > div.row.check > div {
 display: grid;
   grid-template-columns: 150px 1fr 150px 1fr;
 }
+
+@media (max-width: 550px) {.row {
+	  display: grid;
+	  grid-template-columns: 1fr 2fr;
+	  grid-gap: 5px;
+	}
+  }
+
+@media (max-width: 550px) {.column {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr !important;
+	  grid-gap: 5px;
+	}
+  }
 .sub-row {
 	display: grid;
   grid-template-columns: 10px 1fr 10px 1fr;

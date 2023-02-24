@@ -85,13 +85,13 @@
 				<div class="body">
 					<div class="row">
 						<div><label for="first-name" >Player's First Name:</label></div>
-						<div><input type="text" class="bottom-line" id="name" placeholder="Enter your first name here" required="required" ></div>
+						<div><input type="text" class="bottom-line" id="name" name="first-name" placeholder="Enter your first name here" required="required" ></div>
 						<div><label for="last-name">Last Name:</label></div>
-						<div><input type="text"  class="bottom-line" id="last-name" placeholder="Enter your last name here" required="required" ></div>
+						<div><input type="text"  class="bottom-line" id="last-name" name="lastname" placeholder="Enter your last name here" required="required" ></div>
 					</div>
 					<div class="row2">
 						<div><label for="street">Street Address:</label></div>
-						<div><input type="text" class="bottom-line" id="street" placeholder="Enter your Address" required="required" ></div>
+						<div><input type="text" class="bottom-line" id="street" name="street" placeholder="Enter your Address" required="required" ></div>
 					</div>
 					<div class="row">
 						<div><label for="city">City: </label></div>
@@ -99,7 +99,7 @@
 						<div><label for="zip-code" style="margin-left: 30px">Zip Code: </label></div>
 						<div><input type="text"  class="bottom-line" id="zip-code" name="zip-code" required="required" ></div>
 					</div>
-					<div class="row" style="grid-template-columns: 150px 2fr 70px 1fr 1fr;">
+					<div class="row column" style="grid-template-columns: 150px 2fr 70px 1fr 1fr;">
 						<div><label for="bday">Choose Birth Date(mm/dd/yyyy):</label></div>
 						<div><input type="text"  id="bday" class="bottom-line" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" class="datepicker" name="date" value=""  required="required"  /></div>
 						<div><legend>Gender:</legend></div>
@@ -108,64 +108,64 @@
 					</div>
 					<div class="row" style="grid-template-columns: 50px 3fr; flex-direction: row;">
 						<div><legend>Grade:</legend></div>
-						<div style="grid-template-columns:1fr; flex-direction: row;justify-content: left;margin-left: 30px;">						 
-							<input type="radio" name="grades" id="pre" required="required" >
-							<label class="space-input" for="preschool">Pre-School</label>
-							<input type="radio" name="grades" id="1st">
-							<label class="space-input" for="1st">1st</label>
-							<input type="radio" name="grades" id="2nd">
-							<label class="space-input" for="2nd">2nd</label>
-							<input type="radio" name="grades" id="3rd">
-							<label class="space-input" for="3rd">3rd</label>
-							<input type="radio" name="grades" id="4th">
-							<label class="space-input" for="4th">4th</label>
-							<input type="radio" name="grades" id="5th">
-							<label class="space-input" for="5th">5th</label></div>
+						<div style="grid-template-columns:1fr; flex-direction: row;justify-content: left;margin-left: 30px;">	
+							
+<select name="grades" id="grades">
+    <option value="">--Please choose an option--</option>
+    <option value="preschool">Pre-School</option>
+    <option value="first">1st</option>
+    <option value="second">2nd</option>
+    <option value="third">3th</option>
+    <option value="fourth">4th</option>
+    <option value="fifth">5th</option>
+</select>
+					 
+							</div>
 					</div>
 					<div clasS="title-table">
 						<h3>Which elementary school do you live near</h3>
 					</div>
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="aj" name="elementary" ><label for="aj">AJ Katzenmaier</label></div>
-						<div><input class="space-input" type="checkbox" id="gb" name="elementary" ><label for="gb">Greenbay</label>	</div>
+						<div><input class="space-input" type="checkbox" id="aj" name="elementary" value="AJ Katzenmaier" ><label for="aj">AJ Katzenmaier</label></div>
+						<div><input class="space-input" type="checkbox" id="gb" name="elementary" value="Greenbay" ><label for="gb">Greenbay</label>	</div>
 						<div></div>
 					</div>	
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="hy" name="elementary" ><label for="hy">Howard A Yeager</label></div>
-						<div><input class="space-input" type="checkbox" id="ma" name="elementary" ><label for="ma">Marjorie P Hart</label></div>
+						<div><input class="space-input" type="checkbox" id="hy" name="elementary" value="Howard A Yeager" ><label for="hy">Howard A Yeager</label></div>
+						<div><input class="space-input" type="checkbox" id="ma" name="elementary" value="Marjorie P Hart" ><label for="ma">Marjorie P Hart</label></div>
 					</div>	
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="no" name="elementary" ><label for="no">North Elementary</label></div>
-						<div><input class="space-input" type="checkbox" id="so" name="elementary" ><label for="so">South Elementary</label></div>
+						<div><input class="space-input" type="checkbox" id="no" name="elementary" value="North Elementary" ><label for="no">North Elementary</label></div>
+						<div><input class="space-input" type="checkbox" id="so" name="elementary" value="South Elementary"><label for="so">South Elementary</label></div>
 					</div>
 					<div clasS="title-table">
 						<h3 class="form-title">What position(s) do you normally play? (check all that apply)</h3>
 					</div>
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="fo" name="position" ><label for="fo">Forward</label></div>
-						<div><input class="space-input" type="checkbox" id="de" name="position" ><label for="de">Defense</label></div>
+						<div><input class="space-input" type="checkbox" id="fo" name="position" value="Forward" ><label for="fo">Forward</label></div>
+						<div><input class="space-input" type="checkbox" id="de" name="position" value="Defense"><label for="de">Defense</label></div>
 					</div>	
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="mid" name="position" ><label for="mid">Midfield</label></div>
-						<div><input class="space-input" type="checkbox" id="gol" name="position" ><label for="gol">Goalkeeper</label></div>
+						<div><input class="space-input" type="checkbox" id="mid" name="position" value="Midfield"><label for="mid">Midfield</label></div>
+						<div><input class="space-input" type="checkbox" id="gol" name="position" value="Goalkeeper"><label for="gol">Goalkeeper</label></div>
 					</div>	
 					<div clasS="title-table">
 						<h3 class="form-title">Uniform Size</h3>
 					</div>
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="ys" name="uniform" ><label for="ys">Youth Small</label></div>
-						<div><input class="space-input" type="checkbox" id="me" name="uniform" ><label for="me">Medium</label></div>
+						<div><input class="space-input" type="checkbox" id="ys" name="uniform" value="Youth Small"><label for="ys">Youth Small</label></div>
+						<div><input class="space-input" type="checkbox" id="me" name="uniform" value="Medium"><label for="me">Medium</label></div>
 					</div>
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="ym" name="uniform" ><label for="ym">Youth Medium</label></div>
-						<div><input class="space-input" type="checkbox" id="lg" name="uniform" ><label for="lg">Large</label></div>
+						<div><input class="space-input" type="checkbox" id="ym" name="uniform" value="Youth Medium"><label for="ym">Youth Medium</label></div>
+						<div><input class="space-input" type="checkbox" id="lg" name="uniform" value="Large"><label for="lg">Large</label></div>
 					</div>
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div> <input class="space-input" type="checkbox" id="yl" name="uniform" ><label for="yl">Youth Large</label></div>
-						<div><input class="space-input" type="checkbox" id="xl" name="uniform" ><label for="xl">Extra Large</label></div>
+						<div> <input class="space-input" type="checkbox" id="yl" name="uniform" value="Youth Large"><label for="yl">Youth Large</label></div>
+						<div><input class="space-input" type="checkbox" id="xl" name="uniform" value="Extra Large"><label for="xl">Extra Large</label></div>
 					</div>
 					<div class="row check" style="grid-template-columns: 170PX 170PX; flex-direction:row!important;justify-content:left;">
-						<div><input class="space-input" type="checkbox" id="sm" name="uniform" ><label for="sm">Small</label></div>
+						<div><input class="space-input" type="checkbox" id="sm" name="uniform" value="Small"><label for="sm">Small</label></div>
 					</div>
 					<div clasS="title-table">
 						<h3 class="form-title">Permission to Play</h3>
@@ -180,8 +180,8 @@
 						<div><input type="text"  class="bottom-line" name="signature" id="signature"></div>
 					</div>
 					<div class="row check" style="grid-template-columns: 1fr 2fr; flex-direction:row!important;justify-content:left;">
-						<div><label for="date">Date: </label></div>
-						<div><input type="date"  class="bottom-line" class="bottom-line" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" class="datepicker" name="date" value="" /></div>
+						<div><label for="datesign">Date: </label></div>
+						<div><input type="datesign"  class="bottom-line" class="bottom-line" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" class="datepicker" name="date" value="" /></div>
 					</div>
 					<div class="row" style="grid-template-columns: 200PX ; flex-direction:row!important;justify-content:CENTER;">
 						<button type="submit" class="btn-submit">Submit</button>					
